@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://credex-ai-audit-o47a.onrender.com/api",
+  baseURL: "http://localhost:5000/api" || import.meta.env.VITE_API_URL,
 });
 
 export default API;
